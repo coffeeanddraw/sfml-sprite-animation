@@ -1,1 +1,1 @@
-# sfml-sprite-animation
+# SFML SPRITE ANIMATION 
