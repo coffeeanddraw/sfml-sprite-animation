@@ -47,6 +47,13 @@ int main() {
 				window.close();
 			}
 		}
+
+		if (clock.getElapsedTime().asSeconds() >= frameDuration) {
+			frameIndex++;
+			frameIndex = frameIndex % (animSprites.size());
+
+			clock.restart();
+		}
 	}
 	return 0;
 }
