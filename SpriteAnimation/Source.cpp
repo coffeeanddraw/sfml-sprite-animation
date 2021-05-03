@@ -17,6 +17,18 @@ int main() {
 	int sheetRow = animTexture.getSize().y / spriteSize.y;
 	int sheetColumn = animTexture.getSize().x / spriteSize.x;
 
+	for (int i = 0; i < sheetRow; i++) {
+		for (int j = 0; j < sheetColumn; j++) {
+			animSprites.push_back(sf::Sprite(animTexture, sf::IntRect(spriteSize.x * j, spriteSize.y * i, spriteSize.x, spriteSize.y)));
+		}
+	}
+
+	for (int i = sheetRow - 1; i >= 0; i--) {
+		for (int j = sheetColumn - 1; j >= 0; j--) {
+			animSprites.push_back(sf::Sprite(animTexture, sf::IntRect(spriteSize.x * j, spriteSize.y * i, spriteSize.x, spriteSize.y)));
+		}
+	}
+
 	while (window.isOpen()) {
 		sf::Event event;
 		while (window.pollEvent(event)) {
