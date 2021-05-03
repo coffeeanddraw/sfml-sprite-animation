@@ -35,6 +35,11 @@ int main() {
 		animSprites[i].setPosition(window.getSize().x / 2.0f, window.getSize().y / 2.0f);
 	}
 
+	int frameIndex = 0;
+	float frameDuration = 0.1f; // Each frame takes aruond 1/10 sec. 
+
+	sf::Clock clock;
+
 	while (window.isOpen()) {
 		sf::Event event;
 		while (window.pollEvent(event)) {
