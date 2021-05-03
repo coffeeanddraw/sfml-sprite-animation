@@ -54,6 +54,10 @@ int main() {
 
 			clock.restart();
 		}
+
+		window.clear(sf::Color(0, 0, 0));
+		window.draw(animSprites[frameIndex]);
+		window.display();
 	}
 	return 0;
 }
