@@ -1,2 +1,3 @@
 ﻿  Source.cpp
+C:\Users\BatGirl\Documents\Code\C++\sfml-sprite-animation\SpriteAnimation\Source.cpp(32,20): warning C4018: '<': signed/unsigned mismatch
   SpriteAnimation.vcxproj -> C:\Users\BatGirl\Documents\Code\C++\sfml-sprite-animation\SpriteAnimation\Debug\SpriteAnimation.exe

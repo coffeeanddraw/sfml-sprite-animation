@@ -29,6 +29,12 @@ int main() {
 		}
 	}
 
+	for (int i = 0; i < animSprites.size(); i++) {
+		sf::FloatRect animSpriteRect = animSprites[i].getLocalBounds();
+		animSprites[i].setOrigin(animSpriteRect.width / 2.0f, animSpriteRect.height / 2.0f);
+		animSprites[i].setPosition(window.getSize().x / 2.0f, window.getSize().y / 2.0f);
+	}
+
 	while (window.isOpen()) {
 		sf::Event event;
 		while (window.pollEvent(event)) {
